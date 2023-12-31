@@ -12,8 +12,8 @@ from change_filename import return_formatted_file_name
 def add_driver():
     options = webdriver.ChromeOptions()
     options.add_argument("window-size=1400,600")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--headless")
+    #options.add_argument("--no-sandbox")
+    #options.add_argument("--headless")
     options.add_argument("--disable-blink-features=AutomaticControlled")
     options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(options=options)
