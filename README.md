@@ -12,4 +12,5 @@
 <pre><code>python -m venv env</code></pre>
 <pre><code>env/Scripts/activate.ps1</code></pre>
 <pre><code>pip install -r requirements.txt</code></pre>
+<p>Если хотите получить актуальные данные с аукционов, то раскомментируйте последний фрагмент кода в auto_browser.py</p>
 <pre><code>python bot.py</code></pre>
