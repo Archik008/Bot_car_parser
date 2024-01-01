@@ -209,7 +209,7 @@ def update(auction):
            car_list=update_list_car(auction,driver)
         except Exception as e:
            print(f'An exception with driver happened:\n{e}')
-           print(f'Re-creating the driver...')
+           print('Re-creating the driver...')
            driver.close()
            driver.quit()
            time.sleep(120)
