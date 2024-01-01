@@ -8,11 +8,13 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.dispatcher.filters.state import State, StatesGroup
-import time
+
 from data.config import *
 from auto_browser import *
-import pickle
 from change_filename import return_formatted_file_name
+
+import time
+import pickle
 
 class TestStates(Helper):
     mode = HelperMode.snake_case
