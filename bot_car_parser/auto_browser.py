@@ -26,7 +26,7 @@ def find(text,driver):#поиск элемента по тексту
 
 
 def autor(driver,login,passw): #авторизация
-    driver.get("https://cubedcommunity.xcira.com")
+    driver.get("")
     driver.set_window_size(1920, 1080)
     WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.ID, "adornment-email"))).send_keys(login)
     WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.ID, "adornment-password"))).send_keys(passw)
@@ -76,7 +76,7 @@ def get_info_car(driver):
 
 
 def update_list_car(auction,driver):#получение списка всех авто
-    driver.get("https://cubedcommunity.xcira.com/inventory")
+    driver.get("")
     driver.set_window_size(1920, 1080)
     try:
         find("Accept All Cookies",driver).click()
